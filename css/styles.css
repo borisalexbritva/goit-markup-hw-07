@@ -16,9 +16,7 @@ body {
 }
 
 
-body.modal-open{
-    overflow: hidden;
-}
+
 
 
 a {
@@ -165,6 +163,13 @@ a {
 .mobile-menu-item-text {
     color: var(--title-text-color);
 }
+.mobile-menu-item-text:hover {
+    color: #4D5AE5;}
+    .mobile-menu-item-text:focus {
+        color: #4D5AE5;}
+        .mobile-menu-item-text-current{
+            color: #4D5AE5;
+        }
 
 .mobile-menu-list {
     padding-top: 40px;
