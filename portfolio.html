@@ -1,216 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
-<body class="boddy">
-    <header class="head" >
-        <div class="container">
-
-        <a href="index.html" class="web">Web<span class="stud">Studio</span></a>
+<body>
 
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Логотип -->
+            <a href="" class="logo">web<span class="logo-header">studio</span></a>
 
-        <nav>
-            <ul class="buttron list">
-                <li>
-                    <a href="index.html" class="studios">Studio</a>
-                </li>
-                <li class="current">
-                    <a href="portfolio.html" class="currents">Portfolio</a>
-                </li>
-                <li>
-                    <a href="" class="studios">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="maines list">
-            <li>
-                <a href="mailto:info@devstudio.com" lang="en" class="mail">info@devstudio.com</a>
-            </li>
-            <li>
-                <a href="tel:+11-000-111-11-11" class="mail">+11-000-111-11-11</a>
-
-            </li>
-        </ul>
-    </div>
-    </header>
-    <main>
-        <!--1section-->
-        <section class="portfolio">
-            <div class="container">
-                <!-- <h2>Our works</h2> -->
-                <ul class="list filters">
-                    <li><button type="button" class="button-portfolio pointer">All</button></li>
-                    <li><button type="button" class="button-portfolio pointer">Web Site</button></li>
-                    <li><button type="button" class="button-portfolio pointer">App</button></li>
-                    <li><button type="button" class="button-portfolio pointer">Design</button></li>
-                    <li><button type="button" class="button-portfolio pointer">Marketing</button></li>
+            <button type="button" class="mobile-menu-open js-open-menu">
+                <svg width="32" height="22">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
+            <!-- Навигация -->
+            <nav class="navigation">
+                <ul class="site-nav list">
+                    <li class="site-nav-item"><a class="menu-item-text" href="./index.html">Studio</a></li>
+                    <li class="current site-nav-item"><a class="menu-item-text currents" href="./portfolio.html">Portfolio</a></li>
+                    <li class="site-nav-item"><a class="menu-item-text" href="">Contacts</a></li>
                 </ul>
-                <ul class="list port">
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                           <div class="product-actions"> <img src="./images/portfolio.jpg" alt="Banking App Interface Concept" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    </div>
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Banking App Interface Concept</h3>
-                            <p class="text">App</p>
-                        </div>
+            </nav>
+            <!-- Авторизация -->
+            <ul class="auth-nav list">
+                    <li><a href="" class="auth">info@devstudio.com</a></li>
+                    <li><a href="" class="auth">+11 (000) 111-11-11</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container">
+                <button type="button" class="mobile-menu-close js-close-menu">
+                    <svg width="8px" height="8px">
+                        <use href="./images/icons.svg#escape"></use>
+                    </svg>
+                </button>
+                <ul class="list mobile-menu-list">
+                    <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="">Studio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="">Portfolio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="">Contacts</a></li>
+                </ul>
+                <div class="contacts">
+                    <p class="mobile-menu-number">+11 (000) 111-11-11</p>
+                    <p>info@devstudio.com</p>
+                </div>
+                <ul class="social-list list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio1.jpg" alt="Cashless Payment" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Cashless Payment</h3>
-                            <p class="text">Marketing</p>
-                        </div>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio2.jpg" alt="Meditaion App" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Meditaion App</h3>
-                            <p class="text">App</p>
-                        </div>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg width="16" height="16" preserveAspectRatio="xMinYMin">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio3.jpg" alt="Taxi Service" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Taxi Service</h3>
-                            <p class="text">Marketing</p>
-                        </div>
-                    </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio4.jpg" alt="Screen Illustrations" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Screen Illustrations</h3>
-                            <p class="text">Design</p>
-                        </div>
-                    </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio5.jpg" alt="Online Courses" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Online Courses</h3>
-                            <p class="text">Marketing</p>
-                        </div>
-                    </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio6.jpg" alt="Instagram Stories Concept" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Instagram Stories Concept</h3>
-                            <p class="text">Design</p>
-                        </div>
-                    </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio7.jpg" alt="Organic Food" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Organic Food</h3>
-                            <p class="text">Web Site</p>
-                        </div>
-                    </li>
-                    <li tabindex="0" class="product-card pointer">
-                        <div class="product-actions">
-                            <img src="./images/portfolio8.jpg" alt="Fresh Coffee" width="360">
-                            <div class="product-overlay">
-                                <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
-                            </div>
-                        </div>
-                        <div class="port-card">
-                            <h3 class="list-title">Fresh Coffee</h3>
-                            <p class="text">Web Site</p>
-                        </div>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
-           </section>
-        </main>
-    
-        <footer class="footer">
-            <div class="container">
-                <!-- Логотип -->
-                <div class="footer-logo footer-div">
-               
-        <a href="index.html" class="web">Web<span class="dio">Studio</span></a>
-        <p class=" increase text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
-                </div>
-                <div class="social-media footer-div">
-                    <p class="smp">Social media</p>
-                    <ul class="footer-list list">
-                        <li class="footer-item">
-                            <a href="" class="footer-link">
-                                <svg width="24" height="24">
-                                    <use href="images/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-link">
-                                <svg width="24" height="24">
-                                    <use href="images/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-link">
-                                <svg width="24" height="24">
-                                    <use href="images/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-link">
-                                <svg width="24" height="24">
-                                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-           
+        </div>
+    </header>
+    <main>
+        <!-- <h1>Portfolio</h1> -->
+       <!-- Примеры работ -->
+       <section class="portfolio">
+        <div class="container">
+            <!-- <h2>Our works</h2> -->
+            <ul class="list filters">
+                <li><button type="button" class="button-portfolio pointer">All</button></li>
+                <li><button type="button" class="button-portfolio pointer">Web Site</button></li>
+                <li><button type="button" class="button-portfolio pointer">App</button></li>
+                <li><button type="button" class="button-portfolio pointer">Design</button></li>
+                <li><button type="button" class="button-portfolio pointer">Marketing</button></li>
+            </ul>
+            <ul class="list port">
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio.jpg" alt="Banking App Interface Concept" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Banking App Interface Concept</h3>
+                        <p class="text">App</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio1.jpg" alt="Cashless Payment" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Cashless Payment</h3>
+                        <p class="text">Marketing</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio2.jpg" alt="Meditaion App" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Meditaion App</h3>
+                        <p class="text">App</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio3.jpg" alt="Taxi Service" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Taxi Service</h3>
+                        <p class="text">Marketing</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio4.jpg" alt="Screen Illustrations" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Screen Illustrations</h3>
+                        <p class="text">Design</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio5.jpg" alt="Online Courses" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Online Courses</h3>
+                        <p class="text">Marketing</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio6.jpg" alt="Instagram Stories Concept" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Instagram Stories Concept</h3>
+                        <p class="text">Design</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio7.jpg" alt="Organic Food" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Organic Food</h3>
+                        <p class="text">Web Site</p>
+                    </div>
+                </li>
+                <li tabindex="0" class="product-card pointer">
+                    <div class="product-actions">
+                        <img src="./images/portfolio8.jpg" alt="Fresh Coffee" width="396px">
+                        <div class="product-overlay">
+                            <p class="text product-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                    
+                        </div>
+                    </div>
+                    <div class="port-card">
+                        <h3 class="list-title">Fresh Coffee</h3>
+                        <p class="text">Web Site</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+       </section>
+    </main>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Логотип -->
+            <div class="footer-logo footer-div">
+            <a href="" class="logo ftr-logo">web<span class="logo-footer">studio</span></a>
+            <p class="text footer-text">Increase the flow of customers and <br> sales for your business with digital <br> marketing & growth solutions.</p>
+            </div>
+            <div class="social-media footer-div">
+                <p class="smp">Social media</p>
+                <ul class="footer-list list">
+                    <li class="footer-item">
+                        <a href="" class="footer-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-link">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <form class="subscription">
                 <div class="subscription-field">
                     <label for="subscription">Subscribe</label>
@@ -220,15 +263,12 @@
                 <button class="subscription-btn" type="submit">
                     Subscribe
                     <svg width="24px" height="20px">
-                        <use href="images/symbol-defs.svg#icon-suber"></use>
+                    	<use href="./images/icons.svg#message"></use>
                     </svg>
                 </button>
                 </div>
             </form>
         </div>
-    </div>
     </footer>
-        </footer>
-        <script src="./js/modal.js"></script>
-    </body>
-    </html>
+</body>
+</html>
