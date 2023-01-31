@@ -12,8 +12,8 @@
 <body>
 
 
-    <!-- Header -->
-    <header class="header">
+     <!-- Header -->
+     <header class="header">
         <div class="container header-container">
             <!-- Логотип -->
             <a href="" class="logo">web<span class="logo-header">studio</span></a>
@@ -26,8 +26,8 @@
             <!-- Навигация -->
             <nav class="navigation">
                 <ul class="site-nav list">
-                    <li class="site-nav-item"><a class="menu-item-text" href="./index.html">Studio</a></li>
-                    <li class="current site-nav-item"><a class="menu-item-text currents" href="./portfolio.html">Portfolio</a></li>
+                    <li class="current site-nav-item"><a class="menu-item-text  currents" href="./index.html">Studio</a></li>
+                    <li class="site-nav-item"><a class="menu-item-text" href="./portfolio.html">Portfolio</a></li>
                     <li class="site-nav-item"><a class="menu-item-text" href="">Contacts</a></li>
                 </ul>
             </nav>
@@ -37,6 +37,7 @@
                     <li><a href="" class="auth">+11 (000) 111-11-11</a></li>
             </ul>
         </div>
+        <!-- Mobile menu -->
         <div class="mobile-menu js-menu-container">
             <div class="container mobile-menu-container">
                 <button type="button" class="mobile-menu-close js-close-menu">
@@ -44,14 +45,16 @@
                         <use href="./images/icons.svg#escape"></use>
                     </svg>
                 </button>
+                <div class="mobile-menu-content">
                 <ul class="list mobile-menu-list">
                     <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="./index.html">Studio</a></li>
                     <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="./portfolio.html">Portfolio</a></li>
                     <li class="mobile-menu-item"><a class="mobile-menu-item-text" href="">Contacts</a></li>
                 </ul>
+                <div class="mobile-menu-bottom">
                 <div class="contacts">
                     <p class="mobile-menu-number">+11 (000) 111-11-11</p>
-                    <p>info@devstudio.com</p>
+                    <p class="mobile-menu-email">info@devstudio.com</p>
                 </div>
                 <ul class="social-list list">
                     <li class="social-list-item">
@@ -83,6 +86,8 @@
                         </a>
                     </li>
                 </ul>
+                </div>
+            </div>
             </div>
         </div>
     </header>
@@ -270,5 +275,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
